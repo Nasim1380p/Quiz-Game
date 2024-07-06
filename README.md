@@ -3,7 +3,7 @@
 
 
 
-![quiz-img](https://github.com/Nasim1380p/Quiz-Game/assets/155636802/ff85ac33-e512-4825-bbd7-5e4624c2628f)
+![quiz-img](https://github.com/Nasim1380p/Quiz-Game/assets/155636802/342b5b65-8ead-4882-ba23-e6310a7e2168)
 
 -  Developed by 👩‍🎓 : [Nasim Pirghollo](https://github.com/Nasim1380p)  &   [Fatemeh Mohammadian](https://github.com/fatemeMohamadian)
 
