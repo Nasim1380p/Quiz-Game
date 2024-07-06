@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'title';
+    src: url('../font/Merriweather-Bold.ttf');
+}
+@font-face {
+    font-family: 'project';
+    src: url('../font/JosefinSlab-Bold.ttf');
+}
+@font-face {
+    font-family: 'text';
+    src: url('../font/PlayfairDisplay-Medium.ttf');
+}
+.mn{
+    color: rgb(183, 109, 253);
+}

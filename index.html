@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="assets/icon/fontello-b5da6863/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-sky-600  w-full h-[100vh]" style=" background-image:url(assets/img/background.jpg) ; background-size: cover;">
+    <main class="w-full 2xl:container mx-auto" >
+        <section class="w-full flex justify-center items-center mt-[300px] relative">
+            <div
+                class="start flex flex-wrap  cursor-pointer shadow-myshadow bg-white rounded-lg justify-center items-center border">
+                <h1 class="font-title text-sky-800 text-3xl px-[20px] py-[20px]">Start Quiz</h1>
+            </div>
+            <div class="startbox rounded-md absolute hidden flex-wrap lg:w-[37%] border bg-white">
+                <h2 class="w-full py-[20px] pl-[20px] border-b font-title text-xl">Some Rules of this Quiz</h2>
+                <p class="font-text w-full font-bold pl-[20px] pt-[20px]">1. You will have only <span
+                        class="text-sky-600">15 seconds</span> per each question.</p>
+                <p class="font-text w-full font-bold pl-[20px] pt-[5px]">2. Once you select your answer, it can't be
+                    undone.</p>
+                <p class="font-text w-full font-bold pl-[20px] pt-[5px]">3. You can't select any option once time goes
+                    off.</p>
+                <p class="font-text w-full font-bold pl-[20px] pt-[5px]">4. You can't exit from the Quiz while you're
+                    playing.</p>
+                <p class="font-text w-full font-bold pl-[20px] pt-[5px]">5. You'll get points on the basis of your
+                    correct answers.</p>
+                <div class="btn1 w-full my-[20px] flex items-center justify-evenly border-t">
+                    <button id="exit"
+                        class="w-[20%] mt-[15px] hover:border-none transition-all text-center duration-[.4s] hover:bg-sky-700 hover:text-white rounded-md py-[7px] font-project border-[2px] border-sky-600 flex justify-center items-center">Exit
+                        Quiz</button>
+                    <button id="startquiz"
+                        class="w-[20%] mt-[15px] flex-wrap transition-all text-lg hover:bg-sky-800 text-center duration-[.4s] text-white bg-sky-600 rounded-md py-[7px] font-project flex justify-center items-center">Continue</button>
+                </div>
+            </div>
+            <div class="box rounded-md shadow-myshadow w-full lg:w-[35%] hidden bg-white absolute flex-wrap">
+                <div class="time *:my-[10px] w-full my-[10px] text-center flex flex-wrap justify-evenly items-center">
+                    <h3 class="font-title">Awesome Quiz Application</h3>
+                    <div
+                        class="timer *:my-[10px] bg-sky-200 w-[25%] rounded-md flex flex-wrap justify-evenly items-center">
+                        <p class="font-text text-sky-950">Time Left</p>
+                        <span
+                            class="w-[25%] font-title rounded-md flex justify-center items-center bg-slate-800 text-white">15</span>
+                    </div>
+                </div>
+                <div class="widthtime border bg-sky-600 shadow-myshadow h-[7px]"></div>
+                <div
+                    class="quiztext text-center flex flex-wrap justify-center items-center *:font-title *:text-lg w-full my-[10px]">
+                </div>
+                <div
+                    class="quizoption w-full text-center cursor-pointer *:pl-[10px] *:bg-sky-300 *:border-[1px] *:border-sky-500 *:my-[5px] *:py-[8px] *:w-[90%] justify-center items-center *:rounded-md *:font-project *:bg-opacity-30 flex flex-wrap my-[10px]">
+                </div>
+                <div class="counter my-[20px] *:mt-[10px] border-t w-full flex justify-around items-center">
+                    <p class=" font-project text-lg"><span class="font-project"></span> Questions</p>
+                    <button id="nextbtn"
+                        class="font-project transition-all duration-[.3s] rounded-md hover:bg-sky-800 hidden justify-center items-center px-[10px] py-[5px] bg-sky-600 text-white">Next
+                        Que</button>
+                </div>
+
+            </div>
+            <div
+                class="resultbox flex-wrap text-center absolute hidden justify-evenly items-center w-full lg:w-[30%] bg-white *:font-title *:my-[20px]">
+                <p class="txt w-full flex justify-center items-center flex-wrap"></p>
+                <button class="btnagain rounded-md px-[10px] py-[10px] bg-sky-700 text-white">Try Again</button>
+                <button
+                    class="btnquit px-[10px] py-[10px] rounded-md transition-all duration-[.3s] border-[1px] border-sky-600 hover:bg-sky-700 hover:text-white">Exit
+                    Quiz</button>
+            </div>
+        </section>
+        <div class="group lg:w-[15%] w-[30%] z-50 flex cursor-pointer justify-end absolute right-0 bottom-0">
+            <img class="lg:w-[180px] lg:h-[180px] w-[120px] h-[90px] rounded-[50%]" src="assets/img/me.jpg" alt="">
+            <ul
+                class="group-hover:visible group-hover:opacity-[1] absolute top-0 lg:right-[80%] right-[110%] list-none *:text-orange-500 rotate-[18deg] translate-y-[-20px] lg:translate-y-[-13px] hover:*:text-white transition-all duration-[.4s] invisible opacity-0">
+                <li class="mb-[5px] lg:mb-[15px] translate-x-[10px]"><a
+                        href="https://www.instagram.com/nasim_pirghollo_web?igsh=ZTM4ZDRiNzUwMw=="><i
+                            class="icon-instagram text-white lg:text-[30px] text-[20px]"></i></a></li>
+                <li class="mb-[5px] lg:mb-[15px]"><a href="https://www.linkedin.com/in/nasim-pirghollo-a783952a9/"><i
+                            class="icon-linkedin-2 text-white lg:text-[30px] text-[20px]"></i></a></li>
+                <li class="mb-[5px] lg:mb-[15px] translate-x-[20px]"><a href="https://github.com/Nasim1380p"><i
+                            class=" icon-github-squared text-white lg:text-[30px] text-[20px]"></i></a></li>
+            </ul>
+        </div>
+    </main>
+    <script src="assets/js/master.js"></script>
+</body>
+</html>
